@@ -4,10 +4,10 @@ import Image from 'next/image'
 function Hero() {
   return (
     <div className=''>
-    <div className='bg-bgimage text-white w-screen h-screen bg-cover bg-center bg-no-repeat'>
+    <div className='bg-bgimage text-[#fffff0] w-screen h-screen bg-cover bg-center bg-no-repeat'>
         
     
-    <div className='p-6 text-white'>
+    <div className='p-6 text-[#fffff0]'>
         <Nav/>
         <p className='text-4xl font-semibold auto mt-24 lg:text-6xl'>Lighting the <span className='text-yellow-400'>future</span> with
         <span className='text-yellow-400'> power</span> and precision</p>
