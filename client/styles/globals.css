@@ -14,3 +14,10 @@
 {
   color: yellow;
 }
+
+li::marker{
+  border-radius: 2ch;
+  padding-inline: 2ch;
+  margin-inline-end: 2ch;
+  color: blue
+}

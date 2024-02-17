@@ -8,7 +8,7 @@ function About() {
     <p className=' font-light '>About Us</p>
     </div>
 
-    <h1 className='text-3xl font-medium mt-4'>Making your <span className='text-blue-700'> vision </span>
+    <h1 className='text-3xl font-bold mt-4'>Making your <span className='text-blue-700'> vision </span>
     come true at the basic.</h1>
     <p className='mt-2 text-sm'>
     Lorem ipsum dolor sit amet consectetur. 

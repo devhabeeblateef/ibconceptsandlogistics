@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import Hero from "./hero";
 import Show from "./show";
 import About from "./about";
+import Why from "./why";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <Hero/>
       <Show/>
       <About/>
+      <Why/>
     </>
       );
 }
