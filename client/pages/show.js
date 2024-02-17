@@ -2,8 +2,8 @@ import React from 'react'
 
 function Show() {
   return (
-    <div>
-      
+    <div className='h-screen w-screen'>
+      SHOW
     </div>
   )
 }
