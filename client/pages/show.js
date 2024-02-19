@@ -9,7 +9,7 @@ function Show() {
       <p className='text-blue-500 m-auto mt-2 text-center'>Learn more &gt; </p>
 
       <div>
-        <Image src="/building.png" width={300} height={300} className='pt-12 p-0 m-auto' alt="IB Concepts" />
+        <Image src="/building.png" width={300} height={300} className='w-96 pt-12 p-0 m-auto' alt="IB Concepts" />
       </div>
     </div>
   )
