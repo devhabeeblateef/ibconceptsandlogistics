@@ -21,3 +21,67 @@ li::marker{
   margin-inline-end: 2ch;
   color: #0194FF;
 }
+
+/* ProductDisplay.css */
+
+.product-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.slides-container {
+  position: relative;
+  overflow: hidden;
+  max-width: 600px;
+  margin-bottom: 20px;
+}
+
+.slide {
+  display: none;
+}
+
+.slide.active {
+  display: block;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.prev-btn,
+.next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.prev-btn {
+  left: 10px;
+}
+
+.next-btn {
+  right: 10px;
+}
+
+.titles-container {
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  margin: 0 10px;
+  padding: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.title.active {
+  border-bottom: 2px solid #3498db;
+  border-width: 2px;
+}

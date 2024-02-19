@@ -21,8 +21,8 @@ function Hero() {
         
         <Image
         src='/cac.png'
-        width={100}
-        height={100}
+        width={50}
+        height={50}
         className='absolute right-0 bottom-0 p-4' // Adjusted styling for positioning
         alt='CAC Registration Badge'
       />

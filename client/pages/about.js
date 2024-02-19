@@ -20,7 +20,7 @@ function About() {
      <p className='font-semibold mt-6'>We are the best <span className='text-blue-700'> constructions </span>&
      <span className='text-blue-700'> building </span> company projects including</p>
 
-     <div className='flex justify-between'>
+     <div className='flex space-x-6'>
      <ul className='mt-6 space-y-2 list-disc ml-4'>
         <li>Full Lighning</li>
         <li>Half Lighning</li>
@@ -35,11 +35,11 @@ function About() {
 
   </div>
 
-    <div className='flex space-x-4 p-4 mt-4'>
-    <Image src="/img1.png" alt="Electrical Work One" width="300" height="300"/>
+    <div className='flex space-x-4 p-4 mt-4 '>
+    <Image src="/img1.png" alt="Electrical Work One" width="150" height="150"/>
     <div className='space-y-12'>
-    <Image src="/img2.png" alt="Electrical Work One" width="300" height="300"/>
-    <Image src="/img3.png" alt="Electrical Work One" width="300" height="300"/>
+    <Image src="/img2.png" alt="Electrical Work One" width="150" height="150"/>
+    <Image src="/img3.png" alt="Electrical Work One" width="150" height="150"/>
     </div>
     </div>
 
