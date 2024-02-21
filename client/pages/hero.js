@@ -1,6 +1,8 @@
 import React from 'react'
 import Nav from './UI/Nav'
 import Image from 'next/image'
+
+
 function Hero() {
   return (
     <div className=''>
@@ -12,9 +14,9 @@ function Hero() {
         <p className='text-4xl font-semibold auto mt-24 lg:text-6xl'>Lighting the <span className='text-yellow-400'>future</span> with
         <span className='text-yellow-400'> power</span> and precision</p>
 
-        <p className='text-sm pt-2'>Lorem ipsum dolor sit amet consectetur. 
-        Congue ut eget aenean vitae. 
-        Elementum arcu pellentesque aliquet purus ullamcorper libero. Aliquam est lectus.</p>
+        <p className='text-sm pt-4'>
+        IBConcepts illuminates the future with cutting-edge precision and power, setting new standards in electrical engineering. Our commitment to innovation and sustainability ensures that each project transforms possibilities into reality.
+        </p>
 
         <button className='bg-[#0094FF] p-2 m-6 ml-0'>Contact Us</button>
         <button className='border border-white p-2'>View Projects</button>

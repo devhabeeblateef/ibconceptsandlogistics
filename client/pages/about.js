@@ -11,10 +11,7 @@ function About() {
     <h1 className='text-3xl font-bold mt-4'>Making your <span className='text-blue-700'> vision </span>
     come true at the basic.</h1>
     <p className='mt-2 text-sm'>
-    Lorem ipsum dolor sit amet consectetur. 
-    Congue ut eget aenean vitae. 
-    Elementum arcu pellentesque aliquet purus ullamcorper libero. 
-    Aliquam est lectus duis arcu scelerisque habitant.
+    IBConcepts illuminates the future with cutting-edge precision and power, setting new standards in electrical engineering. Our commitment to innovation and sustainability ensures that each project transforms possibilities into reality.
      </p>
 
      <p className='font-semibold mt-6'>We are the best <span className='text-blue-700'> constructions </span>&

@@ -5,6 +5,7 @@ import Show from "./show";
 import About from "./about";
 import Why from "./why";
 import ProductDisplay from "./productdisplay";
+import Footer from "./UI/Footer";
 
 export default function Home() {
   return (
@@ -13,7 +14,7 @@ export default function Home() {
       <Show/>
       <About/>
       <Why/>
-      <ProductDisplay/>
+      <Footer/>
     </>
       );
 }

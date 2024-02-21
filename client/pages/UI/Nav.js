@@ -1,15 +1,14 @@
-import React from 'react'
-
+import { motion } from 'framer-motion'
 function Nav() {
   return (
     <div className='auto'>
       <ul className='flex justify-between '>
         <li className=''>LOGO</li>
         <span className='space-x-16 hidden md:flex'>
-        <li>Home</li>
-        <li>Our Work</li>
-        <li>About</li>
-        <li>Contact Us</li>
+        <motion.li initial={{x: 200}} animate={{x: 0}} transition={{duration: 1}} className='cursor-pointer'>Home</motion.li>
+        <motion.li initial={{x: 200}} animate={{x: 0}} transition={{duration: 2}} className='cursor-pointer'>Our Work</motion.li>
+        <motion.li initial={{x: 200}} animate={{x: 0}} transition={{duration: 3}} className='cursor-pointer'>About</motion.li>
+        <motion.li initial={{x: 200}} animate={{x: 0}} transition={{duration: 3}} className='cursor-pointer'>Contact Us</motion.li>
         </span>
       
         <li className='md:hidden'>
