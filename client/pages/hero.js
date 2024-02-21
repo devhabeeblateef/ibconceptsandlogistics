@@ -1,7 +1,7 @@
 import React from 'react'
 import Nav from './UI/Nav'
 import Image from 'next/image'
-
+import Link from 'next/link'
 
 function Hero() {
   return (
@@ -11,16 +11,23 @@ function Hero() {
     
     <div className='p-6 text-[#fffff0]'>
         <Nav/>
-        <p className='text-4xl font-semibold auto mt-24 lg:text-6xl'>Lighting the <span className='text-yellow-400'>future</span> with
+        <p className='text-4xl font-semibold auto mt-24 lg:text-6xl'>Lighting the
+         <span className='text-yellow-400'>future</span> with
         <span className='text-yellow-400'> power</span> and precision</p>
 
         <p className='text-sm pt-4'>
-        IBConcepts illuminates the future with cutting-edge precision and power, setting new standards in electrical engineering. Our commitment to innovation and sustainability ensures that each project transforms possibilities into reality.
+        IBConcepts illuminates the future with cutting-edge precision and power, 
+        setting new standards in electrical engineering. Our commitment to innovation and
+         sustainability ensures that each project transforms possibilities into reality.
         </p>
 
+        <Link href="/contactus">
         <button className='bg-[#0094FF] p-2 m-6 ml-0'>Contact Us</button>
+        </Link>
+
+        <Link href="/">
         <button className='border border-white p-2'>View Projects</button>
-        
+        </Link>
         <Image
         src='/cac.png'
         width={500}
