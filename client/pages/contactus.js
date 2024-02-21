@@ -1,117 +1,150 @@
-import React from "react";
-import Link from "next/link";
+import React, { useState, useRef } from "react";
 import Nav from "./UI/Nav";
+import Footer from "./UI/Footer";
 
 function Contactus() {
- 
-  return (
-    <div>
-    <div className="bg-gray-300 p-6 w-screen">  
-    <Nav />
-    </div>
-    <div className="p-8">
+  const form = useRef();
+  const [loading, setLoading] = useState(false)
+  const [successMessage, setSuccessMessage] = useState("")
+
+  // Form States
+  const [fullname, setFullName] = useState();
+  const [email, setEmail] = useState("");
+  const [currentfield, setCurrentField] = useState("")
+  const [occupation, setOccupation] = useState("")
+  const [agerange, setAgeRange] = useState("")
+  const [about, setAbout] = useState("")
+
+  
+
+  const resetForm = () => {
+    setFullName("")
+    setEmail("")
+    setCurrentField("")
+    setOccupation("")
+    setAgeRange("")
+    setAbout("")
+  }
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+
     
-      <div className="">
-        <div className="flex justify-center items-center ">
-          <form className="w-full max-w-mdrounded ">
-            <h2 className="text-4xl font-semibold">Contact Us</h2>
-            <p className="mb-4 text-gray-500 text-sm">Please fill the form below to get a quote</p>
-            <div className="mb-4">
-              <label htmlFor="fullName" className="block font-medium mb-1">
-                Full Name
-              </label>
-              <input
-                type="text"
-                id="fullName"
-                name="fullName"
-                className="w-full border rounded px-3 py-2"
-                required
-              />
-            </div>
-            <div className="mb-4">
-              <label htmlFor="email" className="block font-medium mb-1">
-                Email Address
-              </label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                className="w-full border rounded px-3 py-2"
-                required
-              />
-            </div>
-            <div className="mb-4">
-              <label htmlFor="occupation" className="block font-medium mb-1">
-                What do you do?
-              </label>
-              <input
-                type="text"
-                id="occupation"
-                name="occupation"
-                className="w-full border rounded px-3 py-2"
-                required
-              />
-            </div>
-            <div className="mb-4">
-              <label htmlFor="interest" className="block font-medium mb-1">
-                What do you want?
-              </label>
-              <select
-                id="interest"
-                name="interest"
-                className="w-full border rounded px-3 py-2"
-                required
-              >
-                <option value="">Select an option</option>
-                <option value="Scrum">Option A</option>
-                <option value="Web Development">Option B</option>
-              </select>
-            </div>
-            <div className="mb-4">
-              <label htmlFor="commitment" className="block font-medium mb-1">
-                How much time will you be willing to commit?
-              </label>
-              <select
-                id="commitment"
-                name="commitment"
-                className="w-full border rounded px-3 py-2"
-                required
-              >
-                <option value="">Select an option</option>
-                <option value="1month">1 month</option>
-                <option value="3months">3 months</option>
-                <option value="6months">6 months</option>
-              </select>
-            </div>
-            <div className="mb-4">
-              <label htmlFor="ageRange" className="block font-medium mb-1">
-                Age Range
-              </label>
-              <select
-                id="ageRange"
-                name="ageRange"
-                className="w-full border rounded px-3 py-2"
-                required
-              >
-                <option value="">Select an option</option>
-                <option value="18-25">18-25</option>
-                <option value="26-35">26-35</option>
-                <option value="36-45">36-45</option>
-                <option value="46+">46+</option>
-              </select>
-            </div>
-            <div className="mb-4">
-              <button
-                type="submit"
-                className="w-full bg-blue-500 text-white rounded px-4 py-2 font-medium"
-              >
-                Submit
-              </button>
-            </div>
-          </form>
-        </div>
-      </div>
+    try{
+    setLoading(false);
+    resetForm();
+    setSuccessMessage("Received!");
+    setTimeout(() => {
+      setSuccessMessage("");
+    }, 2000)
+  }catch(error){
+    setLoading("false")
+    setSuccessMessage("An Error occured")
+    console.log(error.message)
+  }
+  };
+
+  return (
+    <div className="font-poopins  text-black">
+    <div className="p-8">  
+    <Nav/>
     </div>
+      <div className="bg-[#f2f2f4] font-poppins py-10 px-6 md:px-16 lg:px-32">
+        <h2 className="text-4xl md:text-6xl text-center font-semibold mb-6 text-[#0D0D0D]">
+          Contact Us
+        </h2>
+        <p className="text-gray-600 text-center mb-8">
+          Please fill the form below to get a quote.
+        </p>
+        <form ref={form} onSubmit={handleSubmit} className="max-w-md mx-auto">
+          <div className="mb-6">
+            <label className="block text-sm font-medium text-gray-800">
+              Full Name
+            </label>
+            <input
+              type="text"
+              value={fullname}
+              onChange={(e) => setFullName(e.target.value)}
+              className="mt-1 p-3 w-full border border-gray-300 rounded-md focus:outline-none focus:ring focus:border-blue-500"
+              placeholder="John Doe"
+            />
+          </div>
+          <div className="mb-6">
+            <label className="block text-sm font-medium text-gray-800">
+              Email
+            </label>
+            <input
+              type="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              className="mt-1 p-3 w-full border border-gray-300 rounded-md focus:outline-none focus:ring focus:border-blue-500"
+              placeholder="johndoe@example.com"
+            />
+          </div>
+          <div className="mb-6">
+            <label className="block text-sm font-medium text-gray-800">
+              Current Field
+            </label>
+            <input
+              type="text"
+              value={currentfield}
+              onChange={(e) => setCurrentField(e.target.value)}
+              className="mt-1 p-3 w-full border border-gray-300 rounded-md focus:outline-none focus:ring focus:border-blue-500"
+              placeholder="Accounting, Political Sc. etc."
+            />
+          </div>
+
+          <div className="mb-6">
+            <label className="block text-sm font-medium text-gray-800">
+              Occupation
+            </label>
+            <input
+              type="text"
+              value={occupation}
+              onChange={(e) => setOccupation(e.target.value)}
+              className="mt-1 p-3 w-full border border-gray-300 rounded-md focus:outline-none focus:ring focus:border-blue-500"
+              placeholder="Student, Electrician, etc."
+            />
+          </div>
+
+          <div className="mb-6">
+            <label className="block text-sm font-medium text-gray-800">
+              Age Range
+            </label>
+            <input
+              type="text"
+              value={agerange}
+              onChange={(e) => setAgeRange(e.target.value)}
+              className="mt-1 p-3 w-full border border-gray-300 rounded-md focus:outline-none focus:ring focus:border-blue-500"
+              placeholder="0-10, 10-20, 20-30, etc."
+            />
+          </div>
+
+          
+          <div className="mb-6">
+            <label className="block text-sm font-medium text-gray-800">
+              Tell us about yourself
+            </label>
+            <input
+              type="text"
+              value={about}
+              onChange={(e) => setAbout(e.target.value)}
+              className="mt-1 p-3 h-64 w-full border border-gray-300 rounded-md focus:outline-none focus:ring focus:border-blue-500"
+              placeholder=""
+            />
+          </div>
+
+          <button
+    type="submit"
+    className={successMessage ? "w-full py-3 bg-green-800 text-white rounded-md hover:bg-gray-800" : 
+    "w-full py-3 bg-black text-white rounded-md hover:bg-gray-800" }
+  >
+    {loading ? "Please wait..." :  successMessage ? successMessage : "Get Started"}
+  </button>
+        </form>
+      </div>
+      <Footer/>
     </div>
   );
 }
