@@ -32,11 +32,10 @@ function About() {
 
   </div>
 
-    <div className='flex space-x-4 p-4 mt-4 '>
+    <div className='flex space-x-4 p-8  mt-4 '>
     <Image src="/img1.png" className='w-32 h-32' alt="Electrical Work One" width="150" height="150"/>
-    <div className='space-y-4'>
+    <div className='space-y-2'>
     <Image src="/img2.png" className='w-32 h-32' alt="Electrical Work One" width="150" height="150"/>
-    <Image src="/img3.png" className='w-32 h-32' alt="Electrical Work One" width="150" height="150"/>
     </div>
     </div>
 

@@ -82,18 +82,6 @@ function Contactus() {
               placeholder="johndoe@example.com"
             />
           </div>
-          <div className="mb-6">
-            <label className="block text-sm font-medium text-gray-800">
-              Current Field
-            </label>
-            <input
-              type="text"
-              value={currentfield}
-              onChange={(e) => setCurrentField(e.target.value)}
-              className="mt-1 p-3 w-full border border-gray-300 rounded-md focus:outline-none focus:ring focus:border-blue-500"
-              placeholder="Accounting, Political Sc. etc."
-            />
-          </div>
 
           <div className="mb-6">
             <label className="block text-sm font-medium text-gray-800">
@@ -105,19 +93,6 @@ function Contactus() {
               onChange={(e) => setOccupation(e.target.value)}
               className="mt-1 p-3 w-full border border-gray-300 rounded-md focus:outline-none focus:ring focus:border-blue-500"
               placeholder="Student, Electrician, etc."
-            />
-          </div>
-
-          <div className="mb-6">
-            <label className="block text-sm font-medium text-gray-800">
-              Age Range
-            </label>
-            <input
-              type="text"
-              value={agerange}
-              onChange={(e) => setAgeRange(e.target.value)}
-              className="mt-1 p-3 w-full border border-gray-300 rounded-md focus:outline-none focus:ring focus:border-blue-500"
-              placeholder="0-10, 10-20, 20-30, etc."
             />
           </div>
 
@@ -140,7 +115,7 @@ function Contactus() {
     className={successMessage ? "w-full py-3 bg-green-800 text-white rounded-md hover:bg-gray-800" : 
     "w-full py-3 bg-black text-white rounded-md hover:bg-gray-800" }
   >
-    {loading ? "Please wait..." :  successMessage ? successMessage : "Get Started"}
+    {loading ? "Please wait..." :  successMessage ? successMessage : "Submit"}
   </button>
         </form>
       </div>

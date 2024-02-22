@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 function Why() {
@@ -31,7 +32,9 @@ function Why() {
         </li>
       </ul>
 
-      <button className='p-2 bg-[#0194FF] mt-6'>Get a Quote</button>
+      <Link href="/contactus" >
+        <button className='p-2 bg-[#0194FF] mt-6'>Get a Quote</button>
+      </Link>
     </div>
   )
 }
