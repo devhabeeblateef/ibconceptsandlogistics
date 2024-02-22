@@ -20,7 +20,7 @@ function Productgallery() {
     </div>
 
     <div className='px-8'>
-    <p className='text-left font-semibold text-3xl'>Check 29'</p>
+    <p className='text-left font-semibold text-3xl'>Check 28</p>
     <p className='text-sm'>
     Lorem ipsum dolor sit amet consectetur. 
     Aliquam est lectus duis arcu scelerisque habitant. 
