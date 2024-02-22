@@ -1,9 +1,12 @@
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 function Nav() {
   return (
     <div className='auto'>
       <ul className='flex justify-between '>
-        <li className=''>LOGO</li>
+        <li className=''>
+        <Image src="/logo.png" alt="IB Concepts Logo" width={50} height={50} />
+        </li>
         <span className='space-x-16 hidden md:flex'>
         <motion.li initial={{x: 200}} animate={{x: 0}} transition={{duration: 1}} className='cursor-pointer'>Home</motion.li>
         <motion.li initial={{x: 200}} animate={{x: 0}} transition={{duration: 2}} className='cursor-pointer'>Our Work</motion.li>
