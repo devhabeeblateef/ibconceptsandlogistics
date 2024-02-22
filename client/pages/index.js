@@ -6,9 +6,12 @@ import About from "./about";
 import Why from "./why";
 import ProductDisplay from "./productdisplay";
 import Footer from "./UI/Footer";
+import Nav from "./UI/Nav";
 export default function Home() {
+
   return (
     <>
+      <Nav/>
       <Hero/>
       <Show/>
       <About/>

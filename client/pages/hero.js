@@ -1,17 +1,32 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Nav from './UI/Nav'
 import Image from 'next/image'
 import Link from 'next/link'
 
 
 function Hero() {
+ 
+
+useEffect(() => {
+  const scrollTop = window.scrollY;
+  const windowHeight = window.innerHeight;
+  const contentHeight = document.documentElement.scrollHeight;
+  const fivePercentHeight = (contentHeight * 1) / 100; // Calculate 5% of the content height
+
+  if (window.scrollY > 0) {
+    console.log('hELLO', scrollTop)
+  } else {
+    console.log("Hi ");
+  }
+})
+   
   return (
     <div className=''>
     <div className='snap-x snap-mandatory bg-bgimage text-[#fffff0] w-screen h-screen bg-cover bg-center bg-no-repeat'>
-    <div className='p-6 text-[#fffff0]'>
-        <Nav/>
-        <p className='text-4xl font-semibold auto mt-24 lg:text-6xl'>Lighting the
-         <span className='text-yellow-400'>future</span> with
+    <div className='px-6  text-[#fffff0]'>
+        
+        <p className='text-4xl font-semibold auto pt-32 lg:text-6xl'>Lighting the
+         <span className='text-yellow-400'> future</span> with
         <span className='text-yellow-400'> power</span> and precision</p>
         
         <p className='text-sm pt-4'>
