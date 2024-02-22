@@ -4,9 +4,9 @@ import React from 'react'
 function Why() {
   return (
     <div className='text-[#FFFFF0] h-screen bg-whyimage mt-32 p-8 w-screen bg-left bg-cover'>
-    <p className='mt-10 font-thin text-sm text-[#0194FF]'>IBCONCEPTS</p>
+    <p className='mt-10 font-thin text-sm text-[#003399]'>IBCONCEPTS</p>
       <h1 className=' font-semibold text-5xl mt-0'>Why Us?</h1>
-      <p className='mt-2 text-md'>With <strong className='text-[#0194FF]'>25</strong>  Years of  Experience 
+      <p className='mt-2 text-md'>With <strong className='text-[#003399]'>25</strong>  Years of  Experience 
       we are ready to help you</p>
 
       <ul className='mt-6 list-decimal space-y-6 ml-4'>
@@ -33,7 +33,7 @@ function Why() {
       </ul>
 
       <Link href="/contactus" >
-        <button className='p-2 bg-[#0194FF] mt-6'>Get a Quote</button>
+        <button className='p-2 bg-[#003399] mt-6'>Get a Quote</button>
       </Link>
     </div>
   )

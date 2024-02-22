@@ -19,7 +19,7 @@ li::marker{
   border-radius: 2ch;
   padding-inline: 2ch;
   margin-inline-end: 2ch;
-  color: #0194FF;
+  color: #003399;
 }
 
 /* ProductDisplay.css */
@@ -82,7 +82,7 @@ img {
 }
 
 .title.active {
-  border-bottom: 2px solid #3498db;
+  border-bottom: 2px solid #003399;
   border-width: 2px;
 }
 

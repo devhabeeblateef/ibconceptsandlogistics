@@ -47,11 +47,11 @@ function Contactus() {
 
   return (
     <div className="font-poopins  text-black">
-    <div className="p-8">  
+    <div className="">  
     <Nav/>
     </div>
-      <div className="bg-[#f2f2f4] font-poppins py-10 px-6 md:px-16 lg:px-32">
-        <h2 className="text-4xl md:text-6xl text-center font-semibold mb-6 text-[#0D0D0D]">
+      <div className="bg-[#f2f2f4] font-poppins py-10 px-6 md:px-16 lg:px-32 pt-24">
+        <h2 className="text-4xl md:text-6xl  text-center font-semibold mb-2 text-[#0D0D0D]">
           Contact Us
         </h2>
         <p className="text-gray-600 text-center mb-8">
@@ -85,35 +85,36 @@ function Contactus() {
 
           <div className="mb-6">
             <label className="block text-sm font-medium text-gray-800">
-              Occupation
+              Phone Number
             </label>
             <input
               type="text"
               value={occupation}
               onChange={(e) => setOccupation(e.target.value)}
               className="mt-1 p-3 w-full border border-gray-300 rounded-md focus:outline-none focus:ring focus:border-blue-500"
-              placeholder="Student, Electrician, etc."
+              placeholder="+234 800 000 0000"
             />
           </div>
 
           
           <div className="mb-6">
             <label className="block text-sm font-medium text-gray-800">
-              Tell us about yourself
+              How can we help you?
             </label>
             <input
-              type="text"
-              value={about}
-              onChange={(e) => setAbout(e.target.value)}
-              className="mt-1 p-3 h-64 w-full border border-gray-300 rounded-md focus:outline-none focus:ring focus:border-blue-500"
-              placeholder=""
-            />
+  type="text"
+  value={about}
+  onChange={(e) => setAbout(e.target.value)}
+  className="mt-1 p-3 h-64 w-full border border-gray-300 rounded-md focus:outline-none focus:ring focus:border-blue-500"
+  style={{ lineHeight: '1' }}
+  placeholder="Enter your inquiry or request here..."
+/>
           </div>
 
           <button
     type="submit"
     className={successMessage ? "w-full py-3 bg-green-800 text-white rounded-md hover:bg-gray-800" : 
-    "w-full py-3 bg-black text-white rounded-md hover:bg-gray-800" }
+    "w-full py-3 bg-[#003399] text-white rounded-md hover:bg-gray-800" }
   >
     {loading ? "Please wait..." :  successMessage ? successMessage : "Submit"}
   </button>

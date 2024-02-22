@@ -1,25 +1,10 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import Nav from './UI/Nav'
 import Image from 'next/image'
 import Link from 'next/link'
 
 
 function Hero() {
- 
-
-useEffect(() => {
-  const scrollTop = window.scrollY;
-  const windowHeight = window.innerHeight;
-  const contentHeight = document.documentElement.scrollHeight;
-  const fivePercentHeight = (contentHeight * 1) / 100; // Calculate 5% of the content height
-
-  if (window.scrollY > 0) {
-    console.log('hELLO', scrollTop)
-  } else {
-    console.log("Hi ");
-  }
-})
-   
   return (
     <div className=''>
     <div className='snap-x snap-mandatory bg-bgimage text-[#fffff0] w-screen h-screen bg-cover bg-center bg-no-repeat'>
@@ -36,7 +21,7 @@ useEffect(() => {
         </p>
 
         <Link href="/contactus">
-        <button className='bg-[#0094FF] p-2 m-6 ml-0'>Contact Us</button>
+        <button className='bg-[#003399] p-2 m-6 ml-0'>Contact Us</button>
         </Link>
 
         <Link href="/productgallery">
