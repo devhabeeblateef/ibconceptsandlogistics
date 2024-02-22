@@ -1,21 +1,35 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Nav from './UI/Nav';
 import Image from 'next/image';
 import { FaLessThan, FaGreaterThan } from 'react-icons/fa'
 import Link from 'next/link';
+import productsData from './api/PRODUCTS.JSON';
+
 function Productgallery() {
+  const [currentProductIndex, setCurrentProductIndex] = useState(0);
+
+  const handleNextProduct = () => {
+    setCurrentProductIndex((prevIndex) => (prevIndex + 1) % productsData.length);
+  };
+
+  const handlePrevProduct = () => {
+    setCurrentProductIndex((prevIndex) => (prevIndex - 1 + productsData.length) % productsData.length);
+  };
+
+  const currentProduct = productsData[currentProductIndex];
+
   return (
     <div className='bg-gray-100 h-screen'>
-      <div className='p-8 bg-white'>
-        <Nav />
+      <div className='z-20 bg-white'>
+        
       </div>
 
-      <div role='product image' className='p-8 relative'>
+      <div role='product image' className='p-8 border pt-32 relative'>
         {/* Navigation Arrows */}
-        <div className='absolute top-1/2 left-0 transform -translate-y-1/2 text-white pl-10'>
+        <div className='absolute top-1/2 pt-32 left-0 transform -translate-y-1/2 text-white pl-10'>
           <FaLessThan/>
         </div>
-        <div className='absolute top-1/2 right-0 transform -translate-y-1/2 text-white pr-10'>
+        <div className='absolute top-1/2 pt-32 right-0 transform -translate-y-1/2 text-white pr-10'>
           <FaGreaterThan/>
         </div>
 
@@ -31,12 +45,7 @@ function Productgallery() {
         </div>
 
         {/* Slider */}
-        <div className='flex space-x-2 slider justify-center pt-8'>
-          <span className=''></span>
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
+       
       </div>
 
       <div className='px-8'>

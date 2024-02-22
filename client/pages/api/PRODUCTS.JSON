@@ -1,0 +1,103 @@
+[
+    {
+      "productName": "Laptop",
+      "url": "https://example.com/laptop",
+      "productDescription": "Powerful laptop with high-performance specifications."
+    },
+    {
+      "productName": "Smartphone",
+      "url": "https://example.com/smartphone",
+      "productDescription": "Feature-rich smartphone with the latest technology."
+    },
+    {
+      "productName": "Wireless Headphones",
+      "url": "https://example.com/headphones",
+      "productDescription": "Comfortable wireless headphones with noise-cancellation."
+    },
+    {
+      "productName": "Coffee Maker",
+      "url": "https://example.com/coffee-maker",
+      "productDescription": "Automatic coffee maker for brewing your favorite coffee."
+    },
+    {
+      "productName": "Fitness Tracker",
+      "url": "https://example.com/fitness-tracker",
+      "productDescription": "Track your fitness goals with this advanced fitness tracker."
+    },
+    {
+      "productName": "4K Smart TV",
+      "url": "https://example.com/smart-tv",
+      "productDescription": "Immersive entertainment with a 4K resolution smart TV."
+    },
+    {
+      "productName": "Digital Camera",
+      "url": "https://example.com/digital-camera",
+      "productDescription": "Capture stunning moments with this high-quality digital camera."
+    },
+    {
+      "productName": "Gaming Console",
+      "url": "https://example.com/gaming-console",
+      "productDescription": "Next-gen gaming console for an ultimate gaming experience."
+    },
+    {
+      "productName": "Bluetooth Speaker",
+      "url": "https://example.com/bluetooth-speaker",
+      "productDescription": "Portable Bluetooth speaker with crystal-clear sound."
+    },
+    {
+      "productName": "Tablet",
+      "url": "https://example.com/tablet",
+      "productDescription": "Versatile tablet for work, entertainment, and productivity."
+    },
+    {
+      "productName": "Smart Watch",
+      "url": "https://example.com/smart-watch",
+      "productDescription": "Stay connected and track your health with a smartwatch."
+    },
+    {
+      "productName": "Portable Charger",
+      "url": "https://example.com/portable-charger",
+      "productDescription": "Charge your devices on the go with a reliable portable charger."
+    },
+    {
+      "productName": "Wireless Mouse",
+      "url": "https://example.com/wireless-mouse",
+      "productDescription": "Ergonomic wireless mouse for enhanced productivity."
+    },
+    {
+      "productName": "Drones",
+      "url": "https://example.com/drones",
+      "productDescription": "Explore the skies with a high-performance drone."
+    },
+    {
+      "productName": "External Hard Drive",
+      "url": "https://example.com/external-hard-drive",
+      "productDescription": "Expand your storage with a reliable external hard drive."
+    },
+    {
+      "productName": "Graphic Design Software",
+      "url": "https://example.com/graphic-design-software",
+      "productDescription": "Create stunning graphics with powerful design software."
+    },
+    {
+      "productName": "Home Security Camera",
+      "url": "https://example.com/security-camera",
+      "productDescription": "Monitor your home with a smart home security camera."
+    },
+    {
+      "productName": "Bluetooth Earbuds",
+      "url": "https://example.com/bluetooth-earbuds",
+      "productDescription": "Wireless earbuds for immersive audio on the go."
+    },
+    {
+      "productName": "Smart Thermostat",
+      "url": "https://example.com/smart-thermostat",
+      "productDescription": "Efficiently control your home's temperature with a smart thermostat."
+    },
+    {
+      "productName": "Robot Vacuum Cleaner",
+      "url": "https://example.com/robot-vacuum",
+      "productDescription": "Automate your cleaning routine with a robot vacuum cleaner."
+    }
+  ]
+  
