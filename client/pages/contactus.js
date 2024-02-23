@@ -1,38 +1,46 @@
 import React, { useState, useRef } from "react";
 import Nav from "./UI/Nav";
 import Footer from "./UI/Footer";
+import { collection, addDoc } from 'firebase/firestore';
+import { db } from '../firebase';
 
 function Contactus() {
   const form = useRef();
   const [loading, setLoading] = useState(false)
   const [successMessage, setSuccessMessage] = useState("")
 
-  // Form States
-  const [fullname, setFullName] = useState();
-  const [email, setEmail] = useState("");
-  const [currentfield, setCurrentField] = useState("")
-  const [occupation, setOccupation] = useState("")
-  const [agerange, setAgeRange] = useState("")
-  const [about, setAbout] = useState("")
+ // Form States
+ const [fullname, setFullName] = useState();
+ const [email, setEmail] = useState("");
+ const [phoneNumber, setPhoneNumber] = useState("")
+ const [howCanWeHelp, setHowCanWeHelp] = useState("")
 
-  
+ 
 
-  const resetForm = () => {
-    setFullName("")
-    setEmail("")
-    setCurrentField("")
-    setOccupation("")
-    setAgeRange("")
-    setAbout("")
-  }
+ const resetForm = () => {
+   setFullName("")
+   setEmail("")
+   setPhoneNumber("")
+   setHowCanWeHelp("")
+ }
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setLoading(true);
+ const handleSubmit = async (e) => {
+   e.preventDefault();
+   setLoading(true);
 
-    
-    try{
-    setLoading(false);
+   
+   try{
+   const formcollection = collection(db, 'formcollection');
+
+   await addDoc(formcollection, {
+     fullname,
+     email,
+     phoneNumber,
+     howCanWeHelp,
+   });
+   
+   
+   setLoading(false);
     resetForm();
     setSuccessMessage("Received!");
     setTimeout(() => {
@@ -42,8 +50,7 @@ function Contactus() {
     setLoading("false")
     setSuccessMessage("An Error occured")
     console.log(error.message)
-  }
-  };
+  }  }  
 
   return (
     <div className="font-poopins  text-black">
@@ -89,8 +96,8 @@ function Contactus() {
             </label>
             <input
               type="text"
-              value={occupation}
-              onChange={(e) => setOccupation(e.target.value)}
+              value={phoneNumber}
+              onChange={(e) => setPhoneNumber(e.target.value)}
               className="mt-1 p-3 w-full border border-gray-300 rounded-md focus:outline-none focus:ring focus:border-blue-500"
               placeholder="+234 800 000 0000"
             />
@@ -103,8 +110,8 @@ function Contactus() {
             </label>
             <input
   type="text"
-  value={about}
-  onChange={(e) => setAbout(e.target.value)}
+  value={howCanWeHelp}
+  onChange={(e) => setHowCanWeHelp(e.target.value)}
   className="mt-1 p-3 h-64 w-full border border-gray-300 rounded-md focus:outline-none focus:ring focus:border-blue-500"
   style={{ lineHeight: '1' }}
   placeholder="Enter your inquiry or request here..."
