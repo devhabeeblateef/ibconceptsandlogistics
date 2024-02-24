@@ -35,11 +35,11 @@ function Footer() {
           </div>
 
           <div className="mt-4 flex justify-around text-left">
-            <Link href="/joincommunity" className="text-xs hover:text-gray-300 mx-3">
+            <Link href="/" className="text-xs hover:text-gray-300 mx-3">
               Home
             </Link>
-            <Link href="/homepage/#FAQ" className="text-xs hover:text-gray-300 mx-3">
-              Home
+            <Link href="/#About" className="text-xs hover:text-gray-300 mx-3">
+              About
             </Link>
             <Link href="/coursesforyou" className=" text-xs hover:text-gray-300 mx-3">
               Careers

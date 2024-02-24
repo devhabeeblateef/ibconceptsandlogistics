@@ -18,21 +18,24 @@ function About() {
      <span className='text-[#003399]'> building </span> company projects including</p>
 
      <div className='flex space-x-6'>
-     <ul className='mt-6 space-y-2 list-disc ml-4'>
-        <li>Full Lighning</li>
-        <li>Half Lighning</li>
-        <li>Wiring</li>
+     <ul className='mt-6 space-y-6 list-disc ml-4'>
+        <li>HV and LV networks</li>
+        <li>Fire Detection System</li>
+        <li>Burglar and Intruder Alarm System</li>
+        <li>Water Treatment Plant</li>
      </ul>
 
-     <ul className='mt-6 space-y-2 list-disc ml-4'>
-     <li>Ring Lighning</li>
-     <li>Hole Lighning</li>
-     <li>Fast Wiring</li>
+     <ul className='mt-6 space-y-6 list-disc ml-4'>
+     <li>Surveillance and Access Control</li>
+     <li>Full Lighnining</li>
+     <li>Design and Build Contracts</li>
+     <li>Maintenance</li>
+     <li>Cold and Hot Water Services</li>
   </ul>
 
   </div>
 
-    <div className='flex space-x-4 p-8  mt-4 '>
+    <div className='flex space-x-4 p-8  pt-16 '>
     <Image src="/img1.png" className='w-32 h-32' alt="Electrical Work One" width="150" height="150"/>
     <div className='space-y-2'>
     <Image src="/img2.png" className='w-32 h-32' alt="Electrical Work One" width="150" height="150"/>

@@ -3,7 +3,7 @@ import React from 'react'
 
 function Why() {
   return (
-    <div className='text-[#FFFFF0] h-screen bg-whyimage mt-32 p-8 w-screen bg-left bg-cover'>
+    <div className='text-[#FFFFF0] h-full bg-whyimage mt-96 p-8 w-screen bg-left bg-cover'>
     <p className='mt-10 font-thin text-sm text-yellow-400'>IBCONCEPTS</p>
       <h1 className=' font-semibold text-5xl mt-0'>Why Us?</h1>
       <p className='mt-2 text-md'>With <strong className='text-yellow-400'>25</strong>  Years of  Experience 
@@ -30,7 +30,7 @@ function Why() {
         <li>
         <label className='text-xl'>Amazing Quality</label>
         <section className='text-xs'>
-        Quality is not just a goal; it's a standard at IBConcepts. 
+        Quality is not just a goal; it&apos;s a standard at IBConcepts. 
         We approach every project with an unwavering commitment to
          delivering amazing quality in every aspect of our work. 
         </section>
