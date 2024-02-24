@@ -21,7 +21,7 @@ function Productgallery() {
   return (
     <div className='bg-gray-100 h-screen'>
       <div className='z-20 bg-white'>
-        
+        <Nav/>
       </div>
 
       <div role='product image' className='p-8 border pt-32 relative'>

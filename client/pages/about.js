@@ -23,6 +23,7 @@ function About() {
         <li>Fire Detection System</li>
         <li>Burglar and Intruder Alarm System</li>
         <li>Water Treatment Plant</li>
+        <li>Cold and Hot Water Services</li>
      </ul>
 
      <ul className='mt-6 space-y-6 list-disc ml-4'>
@@ -30,7 +31,7 @@ function About() {
      <li>Full Lighnining</li>
      <li>Design and Build Contracts</li>
      <li>Maintenance</li>
-     <li>Cold and Hot Water Services</li>
+     
   </ul>
 
   </div>
