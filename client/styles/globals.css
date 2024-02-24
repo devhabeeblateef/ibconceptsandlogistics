@@ -19,7 +19,7 @@ li::marker{
   border-radius: 2ch;
   padding-inline: 2ch;
   margin-inline-end: 2ch;
-  color: #003399;
+  color: rgb(250 204 21 / var(--tw-text-opacity));
 }
 
 /* ProductDisplay.css */

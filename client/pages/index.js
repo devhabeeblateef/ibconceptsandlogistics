@@ -14,7 +14,7 @@ export default function Home() {
       <Nav/>
       <Hero/>
       <Show/>
-      <About/>
+      <About id="#about"/>
       <Why/>
       <Footer/>
     </>

@@ -22,7 +22,11 @@ function Nav() {
         </li>
         </Link>
         <span className='space-x-16 hidden md:flex'>
-        <motion.li initial={{x: 200}} animate={{x: 0}} transition={{duration: 1}} className='cursor-pointer'>Home</motion.li>
+        <motion.li 
+        initial={{x: 200}} 
+        animate={{x: 0}} 
+        transition={{duration: 1}}
+        className='cursor-pointer font-bold'>Home</motion.li>
         <motion.li initial={{x: 200}} animate={{x: 0}} transition={{duration: 2}} className='cursor-pointer'>Our Work</motion.li>
         <motion.li initial={{x: 200}} animate={{x: 0}} transition={{duration: 3}} className='cursor-pointer'>About</motion.li>
         <motion.li initial={{x: 200}} animate={{x: 0}} transition={{duration: 3}} className='cursor-pointer'>Contact Us</motion.li>
@@ -44,16 +48,15 @@ function Nav() {
             transition={{ duration: 0.2, ease: 'easeInOut' }}
             className='w-screen'
           >
-            <ul className='space-y-2 mt-6 text-[#393535] text-sm font-bold'>
-              <li>Home</li>
-              <li>Our Work</li>
-              <li>About</li>
-              <li>Contact Us</li>
+            <ul className='mt-6  text-[#393535] text-sm font-bold'>
+              <Link href="/"><li className='mb-4'>Home</li></Link>
+              <Link href="/productdisplay"><li className='mb-4'>Our Work</li></Link>
+              <Link href="/contactus"><li className='mb-4'>Contact Us</li></Link>
             </ul>
           </motion.div>
         )}
       </AnimatePresence>
-    </div>
+    </div>  
   )
 }
 

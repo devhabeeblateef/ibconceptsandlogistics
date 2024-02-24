@@ -14,7 +14,7 @@ function Hero() {
          <span className='text-yellow-400'> future</span> with
         <span className='text-yellow-400'> power</span> and precision</p>
         
-        <p className='text-sm pt-4'>
+        <p className='text-xs pt-4 leading-6'>
         IBConcepts illuminates the future with cutting-edge precision and power, 
         setting new standards in electrical engineering. Our commitment to innovation and
          sustainability ensures that each project transforms possibilities into reality.
