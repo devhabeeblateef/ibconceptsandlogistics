@@ -50,6 +50,10 @@ function Footer() {
         <p className="text-xs text-gray-700 text-center mt-4">
             &copy; 2010 IBConcepts. All rights reserved.
           </p>
+
+          <p className="text-xs text-gray-700 text-center mt-2 ">
+            ibconceptsandlogistics@yahoo.com
+        </p>
       </footer>
         </div>
     </div>

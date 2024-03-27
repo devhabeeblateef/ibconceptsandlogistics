@@ -13,6 +13,7 @@ module.exports = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
           "bgimage": "url('/bgimage.png')",
           "whyimage" : "url('/whyimage.png')",
+          "temimage" : "url('/pictureTwo.jpg')",
       },
     },
   },

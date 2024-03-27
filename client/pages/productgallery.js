@@ -10,7 +10,7 @@ function Productgallery() {
       <Nav/>
     </div>
 
-      <div className='text-white text-2xl pt-16 text-center bg-whyimage w-full h-48 bg-center bg-cover'>
+      <div className='text-white text-2xl pt-16 text-center  bg-temimage w-full h-48  bg-cover'>
         <p>OUR SERVICES</p>
         <Link href='/contactus'>
           <button className='bg-[#003399] p-2 mt-6  text-sm ml-0'>Contact Us</button>
