@@ -22,15 +22,31 @@ function Nav() {
         </li>
         </Link>
         <span className='space-x-16 hidden md:flex'>
-        <motion.li 
+        <Link href="/"><motion.li 
         initial={{x: 200}} 
         animate={{x: 0}} 
         transition={{duration: 1}}
-        className='cursor-pointer font-bold'>Home</motion.li>
-        <motion.li initial={{x: 200}} animate={{x: 0}} transition={{duration: 2}} className='cursor-pointer'>Our Work</motion.li>
-        <motion.li initial={{x: 200}} animate={{x: 0}} transition={{duration: 3}} className='cursor-pointer'>About</motion.li>
-        <motion.li initial={{x: 200}} animate={{x: 0}} transition={{duration: 3}} className='cursor-pointer'>Contact Us</motion.li>
-        </span>
+        className='cursor-pointer font-bold'>Home</motion.li></Link>
+        <Link href="/productgallery"> 
+        <motion.li initial={{x: 200}} animate={{x: 0}} transition={{duration: 2}} className='cursor-pointer'>
+        Our Services</motion.li>
+        </Link>
+        <Link href="/about"> 
+        <motion.li initial={{x: 200}} animate={{x: 0}} transition={{duration: 3}} className='cursor-pointer'>
+        About</motion.li>
+        </Link>
+
+        <Link href="/contactus"> 
+        <motion.li initial={{x: 200}} animate={{x: 0}} transition={{duration: 3}} className='cursor-pointer'>
+        Contact Us</motion.li>
+    </Link>
+
+    <Link href="/why"> 
+        <motion.li initial={{x: 200}} animate={{x: 0}} transition={{duration: 3}} className='cursor-pointer'>
+        Why Us</motion.li>
+    </Link>
+
+    </span>
       
         <li onClick={navHandler} className='md:hidden'>
         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill={ isExpanded ? "black" : "#003399" } class="bi bi-list" viewBox="0 0 16 16">
