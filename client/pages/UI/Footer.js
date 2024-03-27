@@ -47,14 +47,17 @@ function Footer() {
           </div>
         </div>
 
+        <div className='bg-black'> 
         <p className="text-xs text-gray-700 text-center mt-4">
-            &copy; 2010 IBConcepts. All rights reserved.
-          </p>
-
-          <p className="text-xs text-gray-700 text-center mt-2 ">
-            ibconceptsandlogistics@yahoo.com
-        </p>
+        &copy; 2010 IBConcepts. All rights reserved.
+      </p>
+  
+      <p className="text-[10px] text-gray-700 text-center  ">
+        ibconceptsandlogistics@yahoo.com
+    </p>
+    </div>
       </footer>
+     
         </div>
     </div>
   )
