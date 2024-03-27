@@ -50,8 +50,10 @@ function Nav() {
           >
             <ul className='mt-6  text-[#393535] text-sm font-bold'>
               <Link href="/"><li className='mb-4'>Home</li></Link>
-              <Link href="/productgallery"><li className='mb-4'>Our Work</li></Link>
+              <Link href="/productgallery"><li className='mb-4'>Our Services</li></Link>
               <Link href="/contactus"><li className='mb-4'>Contact Us</li></Link>
+              <Link href="/about"><li className='mb-4'>About Us</li></Link>
+              <Link href="/why"><li className='mb-4'>Why Us</li></Link>
             </ul>
           </motion.div>
         )}

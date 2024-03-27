@@ -11,38 +11,38 @@ function Footer() {
             IBConcepts
                 </div>
           <div className="mt-4 flex justify-around">
-            <Link href="/joincommunity" className="text-xs hover:text-gray-300 mx-3">
+            <Link href="/" className="text-xs hover:text-gray-300 mx-3">
               Home
             </Link>
-            <Link href="/homepage/#FAQ" className="text-xs  hover:text-gray-300 mx-3">
-              FAQs
+            <Link href="/why" className="text-xs  hover:text-gray-300 mx-3">
+              Why Us?
             </Link>
-            <Link href="/courses" className=" text-xs hover:text-gray-300 mx-3">
+            <Link href="/contactus" className=" text-xs hover:text-gray-300 mx-3">
               Contact Us
             </Link>
           </div>
 
           <div className="mt-4 flex justify-around">
-            <Link href="/frontendpage" className="text-xs hover:text-gray-300 mx-3">
-              Social Media
+            <Link href="https://instagram.com/ibconcept.ng" className="text-xs hover:text-gray-300 mx-3">
+              Instagram
             </Link>
-            <Link href="/scrumpage" className="text-xs  hover:text-gray-300 mx-3">
-              Home
+            <Link href="/about" className="text-xs  hover:text-gray-300 mx-3">
+              About Us
             </Link>
-            <Link href="/scrumpage" className=" text-xs hover:text-gray-300 mx-3">
-              Home
+            <Link href="https://medium.com/@ibconceptsandlogistics/ibconcepts-69adfb7ec008" className=" text-xs hover:text-gray-300 mx-3">
+              Publications
             </Link>
           </div>
 
           <div className="mt-4 flex justify-around text-left">
             <Link href="/" className="text-xs hover:text-gray-300 mx-3">
-              Home
+              Facebook
             </Link>
-            <Link href="/#About" className="text-xs hover:text-gray-300 mx-3">
-              About
+            <Link href="https://wa.link/c19n84" className="text-xs hover:text-gray-300 mx-3">
+              Chat with Us
             </Link>
-            <Link href="/coursesforyou" className=" text-xs hover:text-gray-300 mx-3">
-              Careers
+            <Link href="/productgallery" className=" text-xs hover:text-gray-300 mx-3">
+              Our Services
             </Link>
           </div>
         </div>

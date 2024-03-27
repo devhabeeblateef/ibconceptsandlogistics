@@ -1,8 +1,15 @@
 import React from 'react'
 import Image from 'next/image'
+import Nav from './UI/Nav'
+import Footer from './UI/Footer'
 function About() {
   return (
+    <div className=''>
+    <div className='pb-16'>
+    <Nav/>
+    </div>
     <div className='p-8 h-screen w-screen text-[#0C0C0C]'>
+    
     <div className='flex'> 
     <span className='h-[4px] mt-[10px] mr-4 rounded-lg w-12 bg-[#003399]'></span> 
     <p className=' font-light '>About Us</p>
@@ -17,22 +24,25 @@ function About() {
      <p className='font-semibold mt-6'>We are the best <span className='text-[#003399]'> constructions </span>&
      <span className='text-[#003399]'> building </span> company projects including</p>
 
-     <div className='flex space-x-6'>
-     <ul className='mt-6 space-y-6 list-disc ml-4'>
-        <li>HV and LV networks</li>
-        <li>Fire Detection System</li>
-        <li>Burglar and Intruder Alarm System</li>
-        <li>Water Treatment Plant</li>
-        <li>Cold and Hot Water Services</li>
-     </ul>
+     <div className='space-y-12'>
+     <div role='Card' className='mt-6'>
+        <p className='text-2xl'>Title</p>
+        <p>Nostrud ipsum exercitation laborum sunt duis consequat ex. Exercitation 
+        labore nulla ut pariatur ut sit officia ex sint culpa.</p>
+      </div>
+  
+      <div role='Card' className='mt-2'>
+        <p className='text-2xl'>Title</p>
+        <p>Nostrud ipsum exercitation laborum sunt duis consequat ex. Exercitation 
+        labore nulla ut pariatur ut sit officia ex sint culpa.</p>
+      </div>
 
-     <ul className='mt-6 space-y-6 list-disc ml-4'>
-     <li>Surveillance and Access Control</li>
-     <li>Full Lighnining</li>
-     <li>Design and Build Contracts</li>
-     <li>Maintenance</li>
-     
-  </ul>
+      <div role='Card' className='mt-2'>
+        <p className='text-2xl'>Title</p>
+        <p>Nostrud ipsum exercitation laborum sunt duis consequat ex. Exercitation 
+        labore nulla ut pariatur ut sit officia ex sint culpa.</p>
+      </div>
+
 
   </div>
 
@@ -43,6 +53,10 @@ function About() {
     </div>
     </div>
 
+    </div>
+    <div className='pt-[120%]'>
+    <Footer/>
+    </div>
     </div>
   )
 }

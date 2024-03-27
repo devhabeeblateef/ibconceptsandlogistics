@@ -27,6 +27,7 @@ function Hero() {
         <Link href="/productgallery">
         <button className='border border-white p-2'>View Projects</button>
         </Link>
+
         <Image
         src='/cac.png'
         width={500}

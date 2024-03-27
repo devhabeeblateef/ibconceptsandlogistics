@@ -1,12 +1,18 @@
 import Link from 'next/link'
 import React from 'react'
+import Nav from './UI/Nav'
+import Footer from './UI/Footer'
 
 function Why() {
   return (
-    <div className='text-[#FFFFF0] h-full bg-whyimage mt-96 p-8 w-screen bg-left bg-cover'>
+    <div className='bg-whyimage'>
+    <div className='pb-8'>
+      <Nav/>
+    </div>
+    <div className='text-[#FFFFF0] h-full   p-8 w-screen bg-left bg-cover'>
     <p className='mt-10 font-thin text-sm text-yellow-400'>IBCONCEPTS</p>
       <h1 className=' font-semibold text-5xl mt-0'>Why Us?</h1>
-      <p className='mt-2 text-md'>With <strong className='text-yellow-400'>25</strong>  Years of  Experience 
+      <p className='mt-2 text-md'>With <strong className='text-yellow-400'>14</strong>  Years of  Experience 
       we are ready to help you</p>
 
       <ul className='mt-6 list-decimal space-y-6 ml-4'>
@@ -40,6 +46,10 @@ function Why() {
       <Link href="/contactus" >
         <button className='p-2 bg-[#003399] mt-6'>Get a Quote</button>
       </Link>
+    </div>
+    <div>
+    <Footer/>
+    </div>
     </div>
   )
 }

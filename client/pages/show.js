@@ -12,8 +12,8 @@ function Show() {
       </Link>
       <p className='text-center text-xs pt-4'>Connect with us on social media</p>
       <div className='flex justify-center pt-4 space-x-6'>
-      <Link href="https://www.instagram.com/ibconcept.ng"><FaInstagram/></Link>
-      <Link href="https://wa.link/c19n84"><FaWhatsapp/></Link>
+      <Link href="https://www.instagram.com/ibconcept.ng"><FaInstagram size="30"/></Link>
+      <Link href="https://wa.link/c19n84"><FaWhatsapp size="30"/></Link>
       </div>
 
       <div>

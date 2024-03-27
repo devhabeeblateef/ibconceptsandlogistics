@@ -1,66 +1,76 @@
-import React, { useState } from 'react';
-import Nav from './UI/Nav';
-import Image from 'next/image';
-import { FaLessThan, FaGreaterThan } from 'react-icons/fa'
-import Link from 'next/link';
-import productsData from './api/PRODUCTS.JSON';
-
+import React from 'react'
+import Nav from './UI/Nav'
+import Image from 'next/image'
+import Footer from './UI/Footer'
+import Link from 'next/link'
 function Productgallery() {
-  const [currentProductIndex, setCurrentProductIndex] = useState(0);
-
-  const handleNextProduct = () => {
-    setCurrentProductIndex((prevIndex) => (prevIndex + 1) % productsData.length);
-  };
-
-  const handlePrevProduct = () => {
-    setCurrentProductIndex((prevIndex) => (prevIndex - 1 + productsData.length) % productsData.length);
-  };
-
-  const currentProduct = productsData[currentProductIndex];
-
   return (
-    <div className='bg-gray-100 h-screen'>
-      <div className='z-20 bg-white'>
-        <Nav/>
+    <div>
+    <div className='pb-24'>
+      <Nav/>
+    </div>
+
+      <div className='text-white text-2xl pt-16 text-center bg-whyimage w-96 h-48 bg-center bg-cover'>
+        <p>OUR SERVICES</p>
+        <Link href='/contactus'>
+          <button className='bg-[#003399] p-2 mt-6  text-sm ml-0'>Contact Us</button>
+        </Link>
       </div>
 
-      <div role='product image' className='p-8 border pt-32 relative'>
-        {/* Navigation Arrows */}
-        <div className='absolute top-1/2 pt-32 left-0 transform -translate-y-1/2 text-white pl-10'>
-          <FaLessThan/>
-        </div>
-        <div className='absolute top-1/2 pt-32 right-0 transform -translate-y-1/2 text-white pr-10'>
-          <FaGreaterThan/>
-        </div>
-
-        {/* Image */}
-        <div className='flex w-screen border'>
-        <img
-          src='/product3.jpg'
-          width={20}
-          height={20}
-          className='rounded-md md:w-128 md:h-128'
-          alt='Full Condit Wiring'
-        />
-        </div>
-
-        {/* Slider */}
-       
+      <div className='space-y-6'>
+      <div role='Card' className='p-8'>
+        <p className='text-2xl'>Title</p>
+        <p>Nostrud ipsum exercitation laborum sunt duis consequat ex. Exercitation 
+        labore nulla ut pariatur ut sit officia ex sint culpa. Et veniam culpa quis magna commodo. 
+        Tempor cillum labore in voluptate eiusmod. Laborum duis elit aliqua tempor deserunt id fugiat.</p>
+        <Image src='/product1.jpg' className='mt-6' width={60} height={60}/>
       </div>
 
-      <div className='px-8'>
-        <p className='text-left font-semibold text-3xl'>Check 28</p>
-        <p className='text-sm'>
-          Lorem ipsum dolor sit amet consectetur. Aliquam est lectus duis arcu
-          scelerisque habitant.
-        </p>
+      <div role='Card' className='p-8'>
+        <p className='text-2xl'>Title</p>
+        <p>Nostrud ipsum exercitation laborum sunt duis consequat ex. Exercitation 
+        labore nulla ut pariatur ut sit officia ex sint culpa. Et veniam culpa quis magna commodo. 
+        Tempor cillum labore in voluptate eiusmod. Laborum duis elit aliqua tempor deserunt id fugiat.</p>
+        <Image src='/product1.jpg'    className='mt-6' width={60} height={60}/>
+      </div>
 
-       <Link href="/contactus"> 
-       <button className='my-6 bg-blue-500 p-2 text-white px-6'>Contact Us</button>
-       </Link>
+
+      <div role='Card' className='p-8'>
+        <p className='text-2xl'>Title</p>
+        <p>Nostrud ipsum exercitation laborum sunt duis consequat ex. Exercitation 
+        labore nulla ut pariatur ut sit officia ex sint culpa. Et veniam culpa quis magna commodo. 
+        Tempor cillum labore in voluptate eiusmod. Laborum duis elit aliqua tempor deserunt id fugiat.</p>
+        <Image src='/product1.jpg'   className='mt-6' width={60} height={60}/>
+      </div>
+
+      <div role='Card' className='p-8'>
+        <p className='text-2xl'>Title</p>
+        <p>Nostrud ipsum exercitation laborum sunt duis consequat ex. Exercitation 
+        labore nulla ut pariatur ut sit officia ex sint culpa. Et veniam culpa quis magna commodo. 
+        Tempor cillum labore in voluptate eiusmod. Laborum duis elit aliqua tempor deserunt id fugiat.</p>
+        <Image src='/product1.jpg'  className='mt-6' width={60} height={60}/>
+      </div>
+
+
+      <div role='Card' className='p-8'>
+        <p className='text-2xl'>Title</p>
+        <p>Nostrud ipsum exercitation laborum sunt duis consequat ex. Exercitation 
+        labore nulla ut pariatur ut sit officia ex sint culpa. Et veniam culpa quis magna commodo. 
+        Tempor cillum labore in voluptate eiusmod. Laborum duis elit aliqua tempor deserunt id fugiat.</p>
+        <Image src='/product1.jpg' className='mt-6' width={60} height={60}/>
+      </div>
+
+      
+      </div>
+
+
+      <p></p>
+
+      <div className='pt-8'>
+      <Footer/>
       </div>
     </div>
-  );
+  )
 }
 
-export default Productgallery;
+export default Productgallery
